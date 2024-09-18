@@ -20,13 +20,13 @@ export default function LogInScreen() {
     const handleLogin = async () => {
         if (validateForm()) {
             try {
-                // const res = await axios('http://127.0.0.1:8081/api/auth/login', { email, password });
-                // console.log(res.data);
-                // if (res.data.success) {
+                 const res = await axios('https://ride-together-mybackend.onrender.com/api/auth/login', { email, password });
+                 console.log(res.data);
+                 if (res.data.success) {
                     navigation.navigate('otpScreen')
-                // } else {
-                //     console.error('Error', error.data.message)
-                // }
+                 } else {
+                     console.error('Error', error.data.message)
+                 }
             } catch (error) {
                 console.log('error submitting form:', error.message)
             }

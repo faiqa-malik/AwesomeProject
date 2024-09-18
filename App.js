@@ -10,7 +10,9 @@ import TrackCreateScreen from './Screen/TrackCreateScreen.jsx';
 import ConfirmBookingScreen from './Screen/ConfirmBookingScreen.jsx';
 import MessageScreen from './Screen/MessageScreen.jsx';
 import OfferARide from './Screen/OfferRide.jsx';
-import PublishARide from './Screen/PublishARide.jsx';
+//import PublishARide from './Screen/PublishARide.jsx';
+import ForgetPassword from './Screen/ForgetPassword.jsx';
+import ResetPassword from './Screen/ResetPassword.jsx';
 export default function App() {
     const Stack = createNativeStackNavigator();
     return (
@@ -26,7 +28,9 @@ export default function App() {
                 <Stack.Screen name='ConfirmBookingScreen' component={ConfirmBookingScreen} />
                 <Stack.Screen name='MessageScreen' component={MessageScreen} />
                 <Stack.Screen name='OfferRide' component={OfferARide} />
-                <Stack.Screen name='PublishARide' component={PublishARide} />
+                {/* <Stack.Screen name='PublishARide' component={PublishARide} /> */}
+                <Stack.Screen name='ForgetPassword' component={ForgetPassword} />
+                <Stack.Screen name='ResetPassword' component={ResetPassword} />
 
             </Stack.Navigator>
            
