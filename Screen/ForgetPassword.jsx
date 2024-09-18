@@ -66,7 +66,7 @@ export default function ForgetPassword({ navigation }) {
     </View>
   );
 }
-
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

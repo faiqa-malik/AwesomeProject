@@ -96,7 +96,7 @@ export default function ResetPassword() {
         value={newpass}
       />
       {error.newpass && <Text style={styles.errorText}>{error.newpass}</Text>}
-
+      //Reset button 
       <TouchableOpacity style={styles.button} onPress={handleReset}>
         <Text style={styles.buttonText}>Next</Text>
       </TouchableOpacity>
